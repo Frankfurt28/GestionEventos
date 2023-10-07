@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".inicioSesion">
+
+        <include
+            android:id="@+id/include"
+            layout="@layout/toolbar_regresar"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tV_TituloIniciarSesion"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:text="Iniciar Sesión"
+            android:textColor="@color/black"
+            android:textSize="26sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/include" />
+
+        <TextView
+            android:id="@+id/tV_correo"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="24dp"
+            android:layout_marginEnd="16dp"
+            android:text="Correo:"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tV_TituloIniciarSesion" />
+
+        <EditText
+            android:id="@+id/eT_correo"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="textEmailAddress"
+            android:textSize="18sp"
+            app:layout_constraintEnd_toEndOf="@+id/tV_correo"
+            app:layout_constraintStart_toStartOf="@+id/tV_correo"
+            app:layout_constraintTop_toBottomOf="@+id/tV_correo" />
+
+        <TextView
+            android:id="@+id/tV_pass"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="Contraseña:"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="@+id/eT_correo"
+            app:layout_constraintStart_toStartOf="@+id/eT_correo"
+            app:layout_constraintTop_toBottomOf="@+id/eT_correo" />
+
+        <EditText
+            android:id="@+id/eT_pass"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="textPassword"
+            android:textSize="18sp"
+            app:layout_constraintEnd_toEndOf="@+id/tV_pass"
+            app:layout_constraintStart_toStartOf="@+id/tV_pass"
+            app:layout_constraintTop_toBottomOf="@+id/tV_pass" />
+
+        <Button
+            android:id="@+id/btn_inicioSesion"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="Iniciar Sesión"
+            app:layout_constraintEnd_toEndOf="@+id/eT_pass"
+            app:layout_constraintStart_toStartOf="@+id/eT_pass"
+            app:layout_constraintTop_toBottomOf="@+id/eT_pass" />
+
+        <View
+            android:id="@+id/separador"
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_marginTop="16dp"
+            android:background="@color/black"
+            app:layout_constraintEnd_toEndOf="@+id/btn_inicioSesion"
+            app:layout_constraintStart_toStartOf="@+id/btn_inicioSesion"
+            app:layout_constraintTop_toBottomOf="@+id/btn_inicioSesion" />
+
+        <TextView
+            android:id="@+id/tV_olvidastePass"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:gravity="center"
+            android:text="¿Olvidaste tu Contraseña?"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="@+id/separador"
+            app:layout_constraintStart_toStartOf="@+id/separador"
+            app:layout_constraintTop_toBottomOf="@+id/separador" />
+
+        <Button
+            android:id="@+id/btn_NavOlvidastePass"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:text="Olvidé mi contraseña"
+            app:layout_constraintEnd_toEndOf="@+id/tV_olvidastePass"
+            app:layout_constraintStart_toStartOf="@+id/tV_olvidastePass"
+            app:layout_constraintTop_toBottomOf="@+id/tV_olvidastePass" />
+
+        <TextView
+            android:id="@+id/tV_cuentaNueva"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:gravity="center"
+            android:text="¿No tienes cuenta?"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="@+id/btn_NavOlvidastePass"
+            app:layout_constraintStart_toStartOf="@+id/btn_NavOlvidastePass"
+            app:layout_constraintTop_toBottomOf="@+id/btn_NavOlvidastePass" />
+
+        <Button
+            android:id="@+id/btn_NavCuentaNueva"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:text="Crear Cuenta"
+            app:layout_constraintEnd_toEndOf="@+id/tV_cuentaNueva"
+            app:layout_constraintStart_toStartOf="@+id/tV_cuentaNueva"
+            app:layout_constraintTop_toBottomOf="@+id/tV_cuentaNueva" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

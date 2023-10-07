@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".registroOrganizador">
+
+    <include
+        android:id="@+id/include"
+        layout="@layout/toolbar_regresar"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tV_TituloCrearCuenta"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="Crea una cuenta"
+        android:textColor="@color/black"
+        android:textSize="26sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/include" />
+
+    <TextView
+        android:id="@+id/tV_nombre"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="16dp"
+        android:text="Nombre:"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tV_TituloCrearCuenta" />
+
+    <EditText
+        android:id="@+id/eT_nombre"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="@+id/tV_nombre"
+        app:layout_constraintStart_toStartOf="@+id/tV_nombre"
+        app:layout_constraintTop_toBottomOf="@+id/tV_nombre" />
+
+    <TextView
+        android:id="@+id/tV_correo"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Email:"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="@+id/eT_nombre"
+        app:layout_constraintStart_toStartOf="@+id/eT_nombre"
+        app:layout_constraintTop_toBottomOf="@+id/eT_nombre" />
+
+    <EditText
+        android:id="@+id/eT_correo"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textEmailAddress"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="@+id/tV_correo"
+        app:layout_constraintStart_toStartOf="@+id/tV_correo"
+        app:layout_constraintTop_toBottomOf="@+id/tV_correo" />
+
+    <TextView
+        android:id="@+id/tV_pass"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Contraseña:"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="@+id/eT_correo"
+        app:layout_constraintStart_toStartOf="@+id/eT_correo"
+        app:layout_constraintTop_toBottomOf="@+id/eT_correo" />
+
+    <EditText
+        android:id="@+id/eT_pass"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPassword"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="@+id/tV_pass"
+        app:layout_constraintStart_toStartOf="@+id/tV_pass"
+        app:layout_constraintTop_toBottomOf="@+id/tV_pass" />
+
+    <Button
+        android:id="@+id/btn_crearCuenta"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Crear Cuenta"
+        app:layout_constraintEnd_toEndOf="@+id/eT_pass"
+        app:layout_constraintStart_toStartOf="@+id/eT_pass"
+        app:layout_constraintTop_toBottomOf="@+id/eT_pass" />
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
